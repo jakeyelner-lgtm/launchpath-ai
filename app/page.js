@@ -33,16 +33,25 @@ export default function Home() {
             Join the waitlist for early access
           </p>
 
-          <div className="flex gap-3">
+          <form
+            action="https://formspree.io/f/maqkpany"
+            method="POST"
+            className="flex gap-3"
+          >
             <input
               type="email"
+              name="email"
               placeholder="Enter your email"
+              required
               className="flex-1 px-5 py-4 rounded-full bg-white text-black outline-none"
             />
-            <button className="px-8 py-4 rounded-full bg-blue-600 font-semibold hover:opacity-90">
+            <button
+              type="submit"
+              className="px-8 py-4 rounded-full bg-blue-600 font-semibold hover:opacity-90"
+            >
               Join
             </button>
-          </div>
+          </form>
         </div>
       </section>
 
@@ -95,3 +104,6 @@ export default function Home() {
     </div>
   );
 }
+git add .
+git commit -m "added waitlist form"
+git push
