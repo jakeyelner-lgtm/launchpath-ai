@@ -183,9 +183,23 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-white/10 py-10 px-8 text-center text-slate-500">
-        <p>ResetPath © 2026</p>
-        <p className="mt-2">Recovery accountability built with trust.</p>
-      </footer>
+  <p>ResetPath © 2026</p>
+  <p className="mt-2">Recovery accountability built with trust.</p>
+
+  <div className="flex justify-center gap-6 mt-6">
+    <a href="/privacy" className="hover:text-white transition">
+      Privacy
+    </a>
+
+    <a href="/terms" className="hover:text-white transition">
+      Terms
+    </a>
+
+    <a href="/contact" className="hover:text-white transition">
+      Contact
+    </a>
+  </div>
+</footer>
     </div>
   );
 }
