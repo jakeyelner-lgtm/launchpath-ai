@@ -19,9 +19,12 @@ export default function Home() {
             Contact
           </a>
 
-          <button className="px-5 py-2 rounded-full bg-teal-400 text-black font-semibold hover:opacity-90">
-            Join Early Access
-          </button>
+          <a
+            href="/dashboard"
+            className="px-5 py-2 rounded-full bg-teal-400 text-black font-semibold hover:opacity-90"
+          >
+            Open Dashboard
+          </a>
         </div>
       </nav>
 
@@ -62,11 +65,13 @@ export default function Home() {
 
                 <button
                   type="submit"
-                  className="px-8 py-4 rounded-full bg-teal-400 text-black font-semibold hover:opacity-90 cursor-pointer"
+                  className="px-8 py-4 rounded-full bg-teal-400 text-black font-semibold hover:opacity-90"
                 >
-                  Join Early Access
+                  Join Waitlist
                 </button>
               </form>
+
+              
 
               <p className="text-slate-500 mt-4 text-sm">
                 Private. Supportive. Built for accountability.
@@ -113,6 +118,7 @@ export default function Home() {
               width={1200}
               height={1400}
               className="rounded-2xl mx-auto"
+              loading="eager"
             />
           </div>
         </div>
